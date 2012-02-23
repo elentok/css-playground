@@ -1,0 +1,56 @@
+.field {
+  clear: both;
+  margin-top: 10px; }
+  .field .caption {
+    display: block;
+    font-weight: bold;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    line-height: 20px; }
+  .field input {
+    line-height: 24px;
+    border: 1px solid #999999;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box; }
+  .field .tooltip {
+    background: #b5e1ae;
+    border: 1px solid #8eb088;
+    padding: 8px;
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box; }
+
+@media screen and (min-width: 640px) {
+  .field .caption {
+    width: 32%;
+    display: inline-block;
+    text-align: right; }
+  .field input {
+    width: 33%;
+    display: inline-block; }
+  .field .tooltip {
+    width: 32%;
+    margin-left: 0.5%;
+    display: block;
+    float: right;
+    position: relative; }
+  .field .tooltip:before {
+    content: "";
+    background: url(images/tooltip-handle.png) no-repeat;
+    width: 10px;
+    height: 17px;
+    display: block;
+    left: -10px;
+    top: 7px;
+    position: absolute; } }
