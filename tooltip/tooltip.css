@@ -32,28 +32,12 @@ form {
     padding-left: 20px;
     display: block;
     margin-top: 2px;
+    position: relative;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -khtml-box-sizing: border-box; }
-    @media screen and (min-width: 640px) {
-      .field .success {
-        width: 32%;
-        margin-left: 0.5%;
-        margin-top: 0;
-        display: block;
-        float: right;
-        position: relative; } }
-    .field .success:before {
-      content: "";
-      background: url(images/tooltip-handle.png) 0px 0px no-repeat;
-      width: 10px;
-      height: 17px;
-      display: block;
-      left: -10px;
-      top: 7px;
-      position: absolute; }
     .field .success:after {
       content: "";
       background: url(images/icons.png) 0px 0px;
@@ -63,6 +47,22 @@ form {
       left: 2px;
       top: 7px;
       position: absolute; }
+    @media screen and (min-width: 640px) {
+      .field .success {
+        width: 32%;
+        margin-left: 0.5%;
+        margin-top: 0;
+        display: block;
+        float: right; }
+        .field .success:before {
+          content: "";
+          background: url(images/tooltip-handle.png) 0px 0px no-repeat;
+          width: 10px;
+          height: 17px;
+          display: block;
+          left: -10px;
+          top: 7px;
+          position: absolute; } }
   .field .error {
     background-color: #fbbda9;
     border: 1px solid #e96f5f;
@@ -70,28 +70,12 @@ form {
     padding-left: 20px;
     display: block;
     margin-top: 2px;
+    position: relative;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -khtml-box-sizing: border-box; }
-    @media screen and (min-width: 640px) {
-      .field .error {
-        width: 32%;
-        margin-left: 0.5%;
-        margin-top: 0;
-        display: block;
-        float: right;
-        position: relative; } }
-    .field .error:before {
-      content: "";
-      background: url(images/tooltip-handle.png) 0px -17px no-repeat;
-      width: 10px;
-      height: 17px;
-      display: block;
-      left: -10px;
-      top: 7px;
-      position: absolute; }
     .field .error:after {
       content: "";
       background: url(images/icons.png) 0px -16px;
@@ -101,6 +85,22 @@ form {
       left: 2px;
       top: 7px;
       position: absolute; }
+    @media screen and (min-width: 640px) {
+      .field .error {
+        width: 32%;
+        margin-left: 0.5%;
+        margin-top: 0;
+        display: block;
+        float: right; }
+        .field .error:before {
+          content: "";
+          background: url(images/tooltip-handle.png) 0px -17px no-repeat;
+          width: 10px;
+          height: 17px;
+          display: block;
+          left: -10px;
+          top: 7px;
+          position: absolute; } }
   .field .tooltip {
     background-color: #fbf1b8;
     border: 1px solid #fde541;
@@ -108,28 +108,12 @@ form {
     padding-left: 20px;
     display: block;
     margin-top: 2px;
+    position: relative;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -khtml-box-sizing: border-box; }
-    @media screen and (min-width: 640px) {
-      .field .tooltip {
-        width: 32%;
-        margin-left: 0.5%;
-        margin-top: 0;
-        display: block;
-        float: right;
-        position: relative; } }
-    .field .tooltip:before {
-      content: "";
-      background: url(images/tooltip-handle.png) 0px -34px no-repeat;
-      width: 10px;
-      height: 17px;
-      display: block;
-      left: -10px;
-      top: 7px;
-      position: absolute; }
     .field .tooltip:after {
       content: "";
       background: url(images/icons.png) 0px -32px;
@@ -139,6 +123,22 @@ form {
       left: 2px;
       top: 7px;
       position: absolute; }
+    @media screen and (min-width: 640px) {
+      .field .tooltip {
+        width: 32%;
+        margin-left: 0.5%;
+        margin-top: 0;
+        display: block;
+        float: right; }
+        .field .tooltip:before {
+          content: "";
+          background: url(images/tooltip-handle.png) 0px -34px no-repeat;
+          width: 10px;
+          height: 17px;
+          display: block;
+          left: -10px;
+          top: 7px;
+          position: absolute; } }
 
 @media screen and (min-width: 640px) {
   .field .caption {
