@@ -1,5 +1,7 @@
 form {
-  padding: 1%; }
+  padding: 1%;
+  margin: auto;
+  max-width: 960px; }
 
 .field {
   clear: both;
@@ -12,7 +14,7 @@ form {
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -khtml-box-sizing: border-box;
-    line-height: 20px; }
+    line-height: 27px; }
   .field input {
     line-height: 24px;
     border: 1px solid #999999;
@@ -23,8 +25,84 @@ form {
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -khtml-box-sizing: border-box; }
+  .field .success {
+    background-color: #b5e1ae;
+    border: 1px solid #8eb088;
+    padding: 6px;
+    padding-left: 20px;
+    display: block;
+    margin-top: 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box; }
+    @media screen and (min-width: 640px) {
+      .field .success {
+        width: 32%;
+        margin-left: 0.5%;
+        margin-top: 0;
+        display: block;
+        float: right;
+        position: relative; } }
+    .field .success:before {
+      content: "";
+      background: url(images/tooltip-handle.png) 0px 0px no-repeat;
+      width: 10px;
+      height: 17px;
+      display: block;
+      left: -10px;
+      top: 7px;
+      position: absolute; }
+    .field .success:after {
+      content: "";
+      background: url(images/icons.png) 0px 0px;
+      width: 16px;
+      height: 16px;
+      display: block;
+      left: 2px;
+      top: 7px;
+      position: absolute; }
+  .field .error {
+    background-color: #fbbda9;
+    border: 1px solid #e96f5f;
+    padding: 6px;
+    padding-left: 20px;
+    display: block;
+    margin-top: 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box; }
+    @media screen and (min-width: 640px) {
+      .field .error {
+        width: 32%;
+        margin-left: 0.5%;
+        margin-top: 0;
+        display: block;
+        float: right;
+        position: relative; } }
+    .field .error:before {
+      content: "";
+      background: url(images/tooltip-handle.png) 0px -17px no-repeat;
+      width: 10px;
+      height: 17px;
+      display: block;
+      left: -10px;
+      top: 7px;
+      position: absolute; }
+    .field .error:after {
+      content: "";
+      background: url(images/icons.png) 0px -16px;
+      width: 16px;
+      height: 16px;
+      display: block;
+      left: 2px;
+      top: 7px;
+      position: absolute; }
   .field .tooltip {
-    background: url("images/lightbulb.png") no-repeat 2px 8px, #fbf1b8;
+    background-color: #fbf1b8;
     border: 1px solid #fde541;
     padding: 6px;
     padding-left: 20px;
@@ -52,62 +130,13 @@ form {
       left: -10px;
       top: 7px;
       position: absolute; }
-  .field .success {
-    background: url("images/tick.png") no-repeat 2px 8px, #b5e1ae;
-    border: 1px solid #8eb088;
-    padding: 6px;
-    padding-left: 20px;
-    display: block;
-    margin-top: 2px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -khtml-box-sizing: border-box; }
-    @media screen and (min-width: 640px) {
-      .field .success {
-        width: 32%;
-        margin-left: 0.5%;
-        margin-top: 0;
-        display: block;
-        float: right;
-        position: relative; } }
-    .field .success:before {
+    .field .tooltip:after {
       content: "";
-      background: url(images/tooltip-handle.png) 0px 0 no-repeat;
-      width: 10px;
-      height: 17px;
+      background: url(images/icons.png) 0px -32px;
+      width: 16px;
+      height: 16px;
       display: block;
-      left: -10px;
-      top: 7px;
-      position: absolute; }
-  .field .error {
-    background: url("images/exclamation.png") no-repeat 2px 8px, #fbbda9;
-    border: 1px solid #e96f5f;
-    padding: 6px;
-    padding-left: 20px;
-    display: block;
-    margin-top: 2px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -khtml-box-sizing: border-box; }
-    @media screen and (min-width: 640px) {
-      .field .error {
-        width: 32%;
-        margin-left: 0.5%;
-        margin-top: 0;
-        display: block;
-        float: right;
-        position: relative; } }
-    .field .error:before {
-      content: "";
-      background: url(images/tooltip-handle.png) 0px -17px no-repeat;
-      width: 10px;
-      height: 17px;
-      display: block;
-      left: -10px;
+      left: 2px;
       top: 7px;
       position: absolute; }
 

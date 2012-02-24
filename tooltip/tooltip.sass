@@ -7,8 +7,8 @@
   -webkit-box-sizing: border-box // safari3 
   -khtml-box-sizing: border-box // konqueror
 
-@mixin tooltip($image_url, $bg_color, $border_color, $handle_offset)
-  background: url($image_url) no-repeat 2px 8px, $bg_color
+@mixin tooltip($bg_color, $border_color, $icon_index)
+  background-color: $bg_color
   border: 1px solid $border_color
   padding: 6px
   padding-left: 20px
@@ -24,17 +24,29 @@
     position: relative
   &:before
     content: ''
-    background: url(images/tooltip-handle.png) 0px $handle_offset no-repeat
+    background: url(images/tooltip-handle.png) 0px $icon_index*-17px no-repeat
     width: 10px
     height: 17px
     display: block
     left: -10px
     top: 7px
     position: absolute
+  &:after
+    content: ''
+    background: url(images/icons.png) 0px $icon_index*-16px
+    width: 16px
+    height: 16px
+    display: block
+    left: 2px
+    top: 7px
+    position: absolute
+
 
 
 form
   padding: 1%
+  margin: auto
+  max-width: 960px
 
 .field
   clear: both
@@ -44,7 +56,7 @@ form
     display: block
     font-weight: bold
     @include border-box
-    line-height: 20px
+    line-height: 27px
 
   input
     line-height: 24px
@@ -53,14 +65,15 @@ form
     width: 100%
     @include border-box
 
-  .tooltip
-    @include tooltip('images/lightbulb.png', #fbf1b8, #fde541, -34px)
-
   .success
-    @include tooltip('images/tick.png', #b5e1ae, #8eb088, 0)
+    @include tooltip(#b5e1ae, #8eb088, 0)
 
   .error
-    @include tooltip('images/exclamation.png', #fbbda9, #e96f5f, -17px)
+    @include tooltip(#fbbda9, #e96f5f, 1)
+
+  .tooltip
+    @include tooltip(#fbf1b8, #fde541, 2)
+
 
 @media screen and (min-width: 640px)
   .field
