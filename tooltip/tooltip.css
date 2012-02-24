@@ -114,8 +114,11 @@ form {
 @media screen and (min-width: 640px) {
   .field .caption {
     width: 32%;
+    margin-right: 0.5%;
     display: inline-block;
-    text-align: right; }
+    text-align: right;
+    float: left; }
   .field input {
     width: 33%;
-    display: inline-block; } }
+    display: inline-block;
+    float: left; } }
