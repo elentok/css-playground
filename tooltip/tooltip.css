@@ -24,15 +24,92 @@ form {
     -webkit-box-sizing: border-box;
     -khtml-box-sizing: border-box; }
   .field .tooltip {
-    background: #b5e1ae;
-    border: 1px solid #8eb088;
+    background: url("images/lightbulb.png") no-repeat 2px 8px, #fbf1b8;
+    border: 1px solid #fde541;
     padding: 6px;
+    padding-left: 20px;
     display: block;
+    margin-top: 2px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -khtml-box-sizing: border-box; }
+    @media screen and (min-width: 640px) {
+      .field .tooltip {
+        width: 32%;
+        margin-left: 0.5%;
+        margin-top: 0;
+        display: block;
+        float: right;
+        position: relative; } }
+    .field .tooltip:before {
+      content: "";
+      background: url(images/tooltip-handle.png) 0px -34px no-repeat;
+      width: 10px;
+      height: 17px;
+      display: block;
+      left: -10px;
+      top: 7px;
+      position: absolute; }
+  .field .success {
+    background: url("images/tick.png") no-repeat 2px 8px, #b5e1ae;
+    border: 1px solid #8eb088;
+    padding: 6px;
+    padding-left: 20px;
+    display: block;
+    margin-top: 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box; }
+    @media screen and (min-width: 640px) {
+      .field .success {
+        width: 32%;
+        margin-left: 0.5%;
+        margin-top: 0;
+        display: block;
+        float: right;
+        position: relative; } }
+    .field .success:before {
+      content: "";
+      background: url(images/tooltip-handle.png) 0px 0 no-repeat;
+      width: 10px;
+      height: 17px;
+      display: block;
+      left: -10px;
+      top: 7px;
+      position: absolute; }
+  .field .error {
+    background: url("images/exclamation.png") no-repeat 2px 8px, #fbbda9;
+    border: 1px solid #e96f5f;
+    padding: 6px;
+    padding-left: 20px;
+    display: block;
+    margin-top: 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box; }
+    @media screen and (min-width: 640px) {
+      .field .error {
+        width: 32%;
+        margin-left: 0.5%;
+        margin-top: 0;
+        display: block;
+        float: right;
+        position: relative; } }
+    .field .error:before {
+      content: "";
+      background: url(images/tooltip-handle.png) 0px -17px no-repeat;
+      width: 10px;
+      height: 17px;
+      display: block;
+      left: -10px;
+      top: 7px;
+      position: absolute; }
 
 @media screen and (min-width: 640px) {
   .field .caption {
@@ -41,19 +118,4 @@ form {
     text-align: right; }
   .field input {
     width: 33%;
-    display: inline-block; }
-  .field .tooltip {
-    width: 32%;
-    margin-left: 0.5%;
-    display: block;
-    float: right;
-    position: relative; }
-  .field .tooltip:before {
-    content: "";
-    background: url(images/tooltip-handle.png) no-repeat;
-    width: 10px;
-    height: 17px;
-    display: block;
-    left: -10px;
-    top: 7px;
-    position: absolute; } }
+    display: inline-block; } }
