@@ -7,9 +7,12 @@
   -webkit-box-sizing: border-box // safari3 
   -khtml-box-sizing: border-box // konqueror
 
+form
+  padding: 1%
+
 .field
   clear: both
-  margin-top: 10px
+  padding-top: 10px
 
   .caption
     display: block
@@ -27,7 +30,7 @@
   .tooltip
     background: #b5e1ae
     border: 1px solid #8eb088
-    padding: 8px
+    padding: 6px
     display: block
     @include border-box
 
@@ -46,14 +49,9 @@
     .tooltip
       width: 32%
       margin-left: 0.5%
-      //display: inline-block
-      //vertical-align: top
       display: block
       float: right
       position: relative
-      //margin-top: 10px
-      //margin-bottom: 5px
-      //display: inline-block
 
     .tooltip:before
       content: ''
@@ -64,3 +62,4 @@
       left: -10px
       top: 7px
       position: absolute
+

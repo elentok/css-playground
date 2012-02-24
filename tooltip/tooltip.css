@@ -1,6 +1,9 @@
+form {
+  padding: 1%; }
+
 .field {
   clear: both;
-  margin-top: 10px; }
+  padding-top: 10px; }
   .field .caption {
     display: block;
     font-weight: bold;
@@ -23,7 +26,7 @@
   .field .tooltip {
     background: #b5e1ae;
     border: 1px solid #8eb088;
-    padding: 8px;
+    padding: 6px;
     display: block;
     box-sizing: border-box;
     -moz-box-sizing: border-box;

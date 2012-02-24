@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Single-element tooltips</title>
+    <link href="../normalize.css" rel="stylesheet" type="text/css" />
     <link href="tooltip.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -13,17 +14,23 @@
       <h1>Responsively-Designed Form</h1>
 
       <div class="field">
-        <label class="caption">Name:</label>
+        <label class="caption">Full Name:</label>
         <input type="text" />
-        <label class="tooltip">Hello World</label>
+        <label class="tooltip">Enter your full name</label>
       </div>
 
       <div class="field">
         <label class="caption">Avatar:</label>
         <input type="text" />
         <label class="tooltip">
-          This is a multiline tooltip with three lines, it's longer than the last tooltip
+          Enter the full url to the avatar image (supported formats: png, jpg, gif).
         </label>
+      </div>
+
+      <div class="field">
+        <label class="caption">Username:</label>
+        <input type="text" />
+        <label class="tooltip">Only a-z, A-Z, 0-9 and underscore allowed</label>
       </div>
       
     </form>
